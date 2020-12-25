@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru" class="lock">
+
+//= templates/head.html
+
+<body>
+<div class="page advantages">
+
+    //= templates/preloader.html
+    //= templates/header.html
+    //= templates/mobile-menu.html
+    //= templates/price-list.html
+
+    <main class="content">
+
+        <section class="partition offset-from-header lazyload"
+                 data-bg="img/advantages-bg.jpg">
+            <div class="container-responsive">
+                <div class="partition__best">
+                    <img data-src="img/icons/icis-top-100.svg" alt="ICIS top 100"
+                         class="partition__best-img lazyload partition__best-img_left"
+                         src="data:image/gif;base64,R0lGODlh0ACJAIAAAP///wAAACH5BAEAAAEALAAAAADQAIkAAALVjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vv1MAADs=">
+                </div>
+            </div>
+            <section class="advantages-offer">
+                <div class="container">
+                    <div class="advantages-offer__text">
+                        <p class="advantages-offer__title">Купите <span>волокно</span><br>
+                            <span>по низким ценам</span></p>
+                        <p class="advantages-offer__title">До 100% отсрочки платежа</p>
+                        <p class="advantages-offer__desc"><b>Компания ХимПартнеры работает на рынке с 2001 года.</b><br>
+                           Нашим высококачественным сырьем пользуется большое число различных производств.</p>
+                        <p class="advantages-offer__desc"><b>Мы можем предложить волокно (более 30 видов) для вашего производства на выгодных условиях.</b></p>
+                    </div>
+                    <div class="advantages-offer__form">
+                        <form action="php/mail.php" method="POST" class="hero__form feedback-form mob-entire-width offer-form" novalidate>
+                            <p class="offer-form__title">Экспресс запрос цены 24/7</p>
+                            <p class="offer-form__subtitle">Укажите, куда выслать прайс-лист</p>
+                            <div class="feedback-form__input-wrap">
+                                <input type="text" placeholder="Ваше имя" name="name">
+                                <div class="field-error"></div>
+                            </div>
+                            <div class="feedback-form__input-wrap">
+                                <input type="email" placeholder="E-mail" name="email">
+                                <div class="field-error"></div>
+                            </div>
+                            <div class="feedback-form__input-wrap">
+                                <input type="text" placeholder="Что именно вы ищете?" name="source">
+                                <div class="field-error"></div>
+                            </div>
+                            <div class="feedback-form__input-wrap">
+                                <input type="text" placeholder="Какой объём нужен?" name="volume">
+                                <div class="field-error"></div>
+                            </div>
+                            <div class="masked-group feedback-form__input-wrap">
+                                <div class="masked-group__country">+7</div>
+                                <input type="tel" class="masked-group__phone" placeholder="(999) 999-99-99" name="phone">
+                                <div class="field-error"></div>
+                            </div>
+                            <div class="masked-group feedback-form__input-wrap">
+                                <input type="text" placeholder="В какой город доставка?" name="city">
+                                <div class="field-error"></div>
+                            </div>
+                            <input type="hidden" name="type" value="price" data-no-validate="true">
+                            <input type="hidden" name="utm_source" value="" data-no-validate="true">
+                            <input type="hidden" name="utm_medium" value="" data-no-validate="true">
+                            <input type="hidden" name="utm_campaign" value="" data-no-validate="true">
+                            <input type="hidden" name="utm_content" value="" data-no-validate="true">
+                            <input type="hidden" name="utm_term" value="" data-no-validate="true">
+                            <button class="btn-adv btn-adv_blue">Отправить запрос цен</button>
+                            <p class="offer-form__comment">Нажимая «отправить запрос» вы соглашаетесь с <a href="#">политикой обработки персональных данных</a></p>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="express-order">
+            <div class="container">
+                <form action="php/mail.php" method="POST" class="hero__form feedback-form express" novalidate>
+                    <p class="express__title">Экспресс запрос цены на химию</p>
+                    <div class="express__inputs">
+                        <div class="feedback-form__input-wrap">
+                            <input type="text" placeholder="Что нужно" name="source">
+                            <div class="field-error"></div>
+                        </div>
+                        <div class="feedback-form__input-wrap">
+                            <input type="text" placeholder="Какой объём" name="volume">
+                            <div class="field-error"></div>
+                        </div>
+                        <div class="feedback-form__input-wrap">
+                            <input type="text" placeholder="Город" name="city">
+                            <div class="field-error"></div>
+                        </div>
+                        <div class="feedback-form__input-wrap">
+                          <input type="text" class="phone-mask" placeholder="Телефон" name="phone">
+                          <div class="field-error"></div>
+                        </div>
+                        <div class="feedback-form__input-wrap">
+                            <input type="email" placeholder="E-mail" name="email">
+                            <div class="field-error"></div>
+                        </div>
+                        <div class="feedback-form__input-wrap">
+                            <input type="text" placeholder="Имя" name="phone">
+                            <div class="field-error"></div>
+                        </div>
+                        <div class="feedback-form__input-wrap feedback-form__input-wrap_textarea">
+                          <textarea placeholder="Комментарий" name="message"></textarea>
+                          <div class="field-error"></div>
+                        </div>
+                        <input type="hidden" name="type" value="price" data-no-validate="true">
+                        <input type="hidden" name="utm_source" value="" data-no-validate="true">
+                        <input type="hidden" name="utm_medium" value="" data-no-validate="true">
+                        <input type="hidden" name="utm_campaign" value="" data-no-validate="true">
+                        <input type="hidden" name="utm_content" value="" data-no-validate="true">
+                        <input type="hidden" name="utm_term" value="" data-no-validate="true">
+                    </div>
+                    <button class="btn-adv btn-adv_blue express__submit">Отправить запрос цен</button>
+                    <p class="express__comment">Нажимая «отправить запрос» вы соглашаетесь с <a href="#">политикой
+                        обработки персональных данных</a></p>
+                </form>
+            </div>
+        </section>
+        <section class="product">
+            <div class="container product__row">
+                <div class="product__img">
+                    <img src="img/product/product-5.jpg">
+                </div>
+                <div class="product__desc">
+                    <p class="product__title">Выбор покупателей</p>
+                    <p class="product__subtitle">Ультрафат 100! Для повышения надоев!</p>
+                    <p class="product__text">Ультрафат 100 зарегистрирован в Россельхознадзоре, прошёл испытания и используется на ведущих фермах России. Продукт не содержит трансжиров, ГМО и тяжёлых металлов. За 5+ года активных продаж Ультрафата у нас нет </p>
+                    <ul>
+                        <li>До +20% к надою молока</li>
+                        <li>До +0,2% к жирности молока</li>
+                        <li>Абсолютно безопасен в применении</li>
+                    </ul>
+                    <button class="btn-adv btn-adv_green">Подробнее о продукте</button>
+                    <p class="product__callme">или звоните на <span><a href="tel:88002000500">8-800-2000-500</a></span></p>
+                </div>
+            </div>
+        </section>
+        <section class="articles">
+            <div class="container articles__row">
+                <div class="article">
+                    <div class="article__img lazyload" data-bg="img/news/article-1.jpg"></div>
+                    <p class="article__title">Зерновые культуры и белковые компоненты</p>
+                    <p class="article__desc">Наша компания за 19 лет работы (а мы работаем с 2001 года) заслужила доверие у своих клиентов. Мы дорожим своей репутацией...</p>
+                    <a class="article__link" href="#">Подробнее</a>
+                </div>
+                <div class="article">
+                    <div class="article__img lazyload" data-bg="img/news/article-2.jpg"></div>
+                    <p class="article__title">Зерновые культуры и белковые компоненты</p>
+                    <p class="article__desc">Наша компания за 19 лет работы (а мы работаем с 2001 года) заслужила доверие у своих клиентов. Мы дорожим своей репутацией...</p>
+                    <a class="article__link" href="#">Подробнее</a>
+                </div>
+                <div class="article">
+                    <div class="article__img lazyload" data-bg="img/news/article-3.jpg"></div>
+                    <p class="article__title">Зерновые культуры и белковые компоненты</p>
+                    <p class="article__desc">Наша компания за 19 лет работы (а мы работаем с 2001 года) заслужила доверие у своих клиентов. Мы дорожим своей репутацией...</p>
+                    <a class="article__link" href="#">Подробнее</a>
+                </div>
+                <div class="article">
+                    <div class="article__img lazyload" data-bg="img/news/article-4.jpg"></div>
+                    <p class="article__title">Зерновые культуры и белковые компоненты</p>
+                    <p class="article__desc">Наша компания за 19 лет работы (а мы работаем с 2001 года) заслужила доверие у своих клиентов. Мы дорожим своей репутацией...</p>
+                    <a class="article__link" href="#">Подробнее</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    //= templates/footer.html
+    //= templates/modals.html
+
+</div>
+
+//= templates/scripts.html
+
+
+</body>
+
+</html>

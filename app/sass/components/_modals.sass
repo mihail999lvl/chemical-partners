@@ -1,0 +1,136 @@
+.overlay
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: rgba(0, 0, 0, .6)
+  z-index: 50000
+  display: none
+
+.popup
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 50000
+  overflow-y: auto
+  visibility: hidden
+  transform: translateX(100%)
+  opacity: .3
+  transition: .8s
+  &.active
+    visibility: visible
+    transform: translateX(0)
+    opacity: 1
+  &-content
+    padding: 30px
+    min-height: 100%
+    @include flexbox(flex, center, center)
+  &-body
+    display: inline-block
+    position: relative
+    padding: 50px 40px 40px
+    background: #fff
+    max-width: 1200px
+  &-close
+    position: absolute
+    top: 20px
+    right: 20px
+    cursor: pointer
+    transition: .5s
+    &:hover 
+      transform: scale(1.2)
+
+.feedback__popup
+  .feedback-form
+    padding: 0
+  
+.feedback-form
+  width: 380px
+  max-width: 100%
+  background: #fff
+  color: $black
+  padding: 40px
+  &__title
+    font-size: 24px
+    line-height: 1.4
+    text-align: center
+    padding-left: 32px
+    position: relative
+    margin-bottom: 30px
+    &::before
+      content: ""
+      position: absolute
+      top: 7px
+      left: 0
+      background-image: url('../img/icons/price.svg')
+      background-repeat: no-repeat
+      @include size(18px, 18px)
+    .hours
+      padding: 3px
+      color: #fff
+      font-weight: 700
+      background: $blue
+    .text
+      font-weight: 400
+  &__input-wrap
+    margin-bottom: 20px
+  &__input
+    font-size: 14px
+  &__textarea-wrap
+    margin-bottom: 20px
+  &__textarea
+    font-size: 14px
+    height: 115px
+  &__btn
+    width: 100%
+
+.popup-price 
+  &__body
+    width: 600px
+    max-width: 100%
+  &__title 
+    font-size: 24px
+    line-height: 1.4
+    padding-left: 32px
+    position: relative
+    margin-bottom: 30px
+    &::before
+      content: ""
+      position: absolute
+      top: 7px
+      left: 0
+      background-image: url(../img/icons/price.svg)
+      background-repeat: no-repeat
+      width: 18px
+      height: 18px
+  &__item
+    margin-bottom: 20px
+  &__input
+    background: #e9e9e9
+  &__textarea
+    background: #e9e9e9
+    height: 150px
+  &__btn
+    width: 100%
+    &::before
+      left: 30%
+  &__step-two
+    display: none
+
+.popup-policy
+  &__text:not(:last-child)
+    margin-bottom: 20px
+  &__text-item
+    margin-bottom: 5px
+
+.popup-message
+  &__body
+    padding: 60px
+    text-align: center
+    max-width: 600px
+  &__title
+    margin-bottom: 20px
+    font-size: 24px

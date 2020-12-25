@@ -1,0 +1,67 @@
+.numbers
+  background: $gray
+  .container
+    width: 1444px
+  &__title
+    margin-bottom: 30px
+    text-align: center
+  &__text
+    width: 1125px
+    max-width: 100%
+    margin: 30px auto 70px
+    font-size: 20px
+    font-weight: 300
+  &__inner-wrap
+    @include flexbox(flex, space-between, center)
+  &__victory
+    width: 80px
+    display: block
+  &__victory-left
+    margin-right: 35px
+  &__victory-right
+    margin-left: 35px
+  &__inner
+    max-width: 1200px
+    @include flexbox(flex, space-between, flex-start)
+  &__item
+    text-align: center
+    flex: 0 1 215px
+    &:not(:last-child)
+      margin-right: 10px
+    &:not(:nth-child(3))
+      margin-top: 55px
+  &__item-top
+    min-height: 125px
+  &__item-num
+    font-size: 66px
+    font-weight: 300
+    line-height: 1
+    white-space: nowrap
+  &__item-category
+    color: $blue
+    font-size: 20px
+    text-transform: uppercase
+  &__item-desc
+    margin-top: 10px
+  &__circle-wrap
+    width: 180px  
+    height: 180px
+    text-align: center
+    background: #e1b341 linear-gradient(-48deg, rgba(208, 165, 60, 0.5) 0%, rgba(164, 126, 33, 0.5) 29%, rgba(208, 165, 60, 0.5) 59%, rgba(255, 216, 122, 0.5) 100%)
+    border-radius: 50%
+    @include flexbox(inline-flex, center, center)
+  &__circle
+    background: #e1b341
+    width: 165px
+    height: 165px
+    border-radius: 50%
+  &__circle-text
+    color: #b17f1f
+    font-size: 20px
+    text-transform: uppercase
+    margin: 20px 0 5px
+  &__circle-num
+    font-size: 70px
+    font-weight: 300
+    color: #fff
+    line-height: 1

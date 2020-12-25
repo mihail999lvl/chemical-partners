@@ -1,0 +1,15 @@
+.pagination
+  flex-wrap: wrap
+  @include flexbox(flex, center, center)
+  &__item
+    padding: 14px 22px
+    display: block
+    background: transparent
+    transition: .3s
+    &:hover
+      background: #ddd
+    &.active  
+      background: $blueDark
+      color: $white
+    &.pagination__dots:hover
+      background: transparent

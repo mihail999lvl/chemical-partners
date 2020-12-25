@@ -1,0 +1,49 @@
+.contacts
+  position: relative
+  background: $gray
+  &.section
+    padding: 120px 0
+  &__inner
+    @include flexbox(flex, space-between, center)
+  &__info
+    margin-right: 30px
+  &__info,
+  &__map-wrapper
+    flex: 0 1 50%
+  &__title
+    text-align: left
+    margin-bottom: 50px
+  &__item
+    display: flex
+    align-items: flex-start
+    &:not(:last-child)
+      margin-bottom: 30px
+  &__icon
+    margin-right: 15px
+    transform: translateY(5px)
+  &__phone
+    transition: .3s
+    font-weight: 700
+    &:hover
+      color: $blue
+  &__email
+    color: $blue
+    transition: .3s
+    &:hover
+      color: $red
+    .contacts__icon
+      transform: translateY(8px)
+  &__date
+    display: flex
+  &__date-name
+    margin-right: 40px
+  &__map
+    position: absolute
+    top: 0
+    left: 50%
+    width: 50%  
+    height: 100%
+  &__map-iframe
+    width: 100%
+    height: 100%
+  

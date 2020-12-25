@@ -1,0 +1,89 @@
+.news
+  &__inner
+    margin-bottom: 60px
+    display: flex
+    justify-content: space-between
+  &__articles
+    flex: 0 1 826px
+  &__articles-row
+    display: flex
+    justify-content: center
+    &:not(:last-child)
+      margin-bottom: 40px
+  &__article
+    flex: 0 1 50%
+    margin-right: 40px
+    font-size: 14px
+  &__article-top
+    min-height: 230px
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    position: relative
+    color: #fff
+    text-transform: uppercase
+    font-weight: 700
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: rgba(0, 0, 0, .3)
+  &__article-type
+    position: absolute
+    top: 0
+    left: 0
+    margin: 10px
+    padding: 3px 7px
+    background: rgba($blue, .5)
+  &__article-title
+    position: absolute
+    bottom: 0
+    left: 0
+    padding: 25px 30px
+    line-height: 1.7
+  &__answers
+    flex: 0 1 373px
+  &__article-bottom
+    background: #fff
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.07)
+    padding: 25px 20px 25px 30px
+    @include flexbox(flex, space-between, center)
+  &__article-link
+    text-transform: uppercase
+    font-weight: 700
+    color: $blue
+    padding-right: 30px
+    position: relative
+    &::before
+      content: ""
+      background-image: url('../img/icons/arrow-right-small.svg')
+      background-repeat: no-repeat
+      position: absolute
+      top: 50%
+      right: 5px
+      transform: translateY(-50%)
+      transition: .3s
+      @include size(9px, 15px)
+    &:hover::before
+      right: 0
+  &__answers-subtitle
+    font-size: 24px
+    margin-bottom: 30px
+  &__answer-item
+    background-color: #c5daff
+    padding: 25px 30px
+    &:not(:last-child)
+      margin-bottom: 40px
+  &__answer-top
+    margin-bottom: 25px
+  &__answer-title
+    font-size: 12px
+    font-weight: 700
+    text-transform: uppercase
+    margin-bottom: 5px
+  &__answer-text
+    font-size: 14px

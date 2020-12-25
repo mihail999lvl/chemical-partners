@@ -1,0 +1,29 @@
+.footer
+  margin-top: auto
+  background: $blackDark
+  padding: 35px 0 25px
+  &__inner
+    @include flexbox(flex, space-between, center)
+  &__left
+    display: flex
+    align-items: center
+  &__mouse
+    margin-left: 40px
+  &__social
+    margin: 0 20px
+    @include flexbox(flex, center, center)
+  &__social-item
+    svg
+      display: block
+      transition: .3s
+    &:hover
+      .footer__social-inst
+        fill: $inst
+      .footer__social-facebook
+        fill: $facebook
+    &:not(:last-child)
+      margin-right: 20px
+  &__rights
+    text-align: right
+    color: #4a4a4a
+    

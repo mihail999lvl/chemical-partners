@@ -1,0 +1,22 @@
+.partition
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center center
+  color: #fff
+  position: relative
+  z-index: 1
+  &__best
+    position: relative
+  &__best-img
+    position: absolute
+    top: 0
+    right: 0
+    z-index: -1
+    animation: fadeToggle 2s infinite 1s
+    &_left
+      right: auto
+      left: 0
+  &__title
+    padding: 80px 0
+    max-width: 750px
+    margin: 0 auto

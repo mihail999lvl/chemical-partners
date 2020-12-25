@@ -1,0 +1,182 @@
+.header 
+  z-index: 5000
+  position: fixed
+  width: 100%
+  background: $gray
+  &__top-wrapper
+    border-bottom: 2px solid #dadada
+  &__top
+    @include flexbox(flex, space-between, center)
+  &__info
+    text-align: center
+    font-size: 14px
+    color: #fff
+    font-weight: 700
+    text-transform: uppercase
+    padding: 0 5px
+    background: $blue
+    animation: fadeToggle 6s infinite
+  &__more
+    @include flexbox(flex, space-between, center)
+  &__countries
+    display: flex
+    align-items: center
+    margin: 0 40px
+  &__countries-item
+    max-width: 24px
+    &:not(:last-child)
+      margin-right: 10px
+  &__btn
+    cursor: pointer
+    color: $blue
+    font-weight: 700
+    text-transform: uppercase
+    background: #e5e5e5
+    transition: .3s
+    padding: 12px 50px 12px 70px
+    font-size: 14px
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: 20%
+      background-image: url('../img/icons/contact.svg')
+      background-repeat: no-repeat
+      @include size(18px, 14px)
+    &:hover
+      background: $white
+  &__bottom
+    padding: 5px 0
+    @include flexbox(flex, space-between, center)
+  &__bottom-left
+    display: flex
+    align-items: center
+  &__mouse
+    margin: 0 60px
+  &__nav-list
+    display: flex
+    align-items: center
+  &__nav-item:not(:last-child)
+    margin-right: 50px
+  &__nav-link
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    transition: .3s
+    &:hover
+      color: $blue
+    &.active
+      padding-bottom: 37px
+      color: $blue
+      border-bottom: 4px solid $blue
+  &__burger
+    cursor: pointer
+    display: none
+    position: relative
+    margin-left: 20px
+    @include size(18px, 14px)
+    span
+      width: 100%
+      height: 2px
+      background: $blue
+      display: block
+      position: absolute
+      left: 0
+      transition: .5s
+      &:first-child
+        top: 0
+      &:nth-child(2)
+        top: 6px
+      &:last-child
+        bottom: 0
+    &.active
+      span
+        &:first-child
+          top: 5px
+          transform: rotate(45deg)
+        &:nth-child(2)
+          opacity: 0
+        &:last-child
+          bottom: 7px
+          transform: rotate(-45deg)
+  &__bottom-right
+    display: flex
+    align-items: center
+  &__location
+    font-size: 14px
+    font-weight: 700
+    padding-left: 35px
+    position: relative
+    margin: 0 60px
+    &::before
+      content: ""
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: 0
+      background-image: url('../img/icons/location.svg')
+      background-repeat: no-repeat
+      @include size(14px, 20px)
+  &__form
+    display: none
+    position: relative
+  &.fixed 
+    .header__form
+      margin: 0 40px
+      display: block
+    .header__location
+      display: none
+  &__search
+    padding: 15px 40px 15px 15px
+    font-size: 14px
+  &__btn-submit
+    cursor: pointer
+    background: transparent
+    position: absolute
+    top: 50%
+    right: 15px
+    transform: translateY(-50%)
+  &__contacts
+    display: flex
+    flex-direction: column
+  &__phone
+    transition: .3s
+    font-size: 24px
+    font-weight: 700
+    padding-left: 30px
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: 0
+      background-image: url('../img/icons/phone.svg')
+      background-repeat: no-repeat
+      @include size(18px, 18px)
+    &:hover
+      color: $blue
+  &__email
+    transition: .3s
+    font-size: 20px
+    font-weight: 700
+    padding-left: 30px
+    position: relative
+    color: $blue
+    &::before
+      content: ""
+      position: absolute
+      top: 50%
+      transform: translateY(-43%)
+      left: 0
+      background-image: url('../img/icons/email.svg')
+      background-repeat: no-repeat
+      @include size(18px, 14px)
+    &:hover
+      color: $red
+  &__countries-mob
+    display: none
+    justify-content: center
+    align-items: center

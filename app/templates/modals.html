@@ -1,0 +1,290 @@
+<div class="overlay"></div>
+
+<!--
+<div class="popup">
+  <div class="popup-content">
+    <div class="popup-body">
+      <div class="popup-close">
+        <img data-src="img/icons/close.svg" alt="close"
+          class="lazyload popup-close__icon"
+          src="data:image/gif;base64,R0lGODlhEAAQAIAAAP///wAAACH5BAEAAAEALAAAAAAQABAAAAIOjI+py+0Po5y02ouzPgUAOw==">
+      </div>
+    </div>
+  </div>
+</div>
+-->
+
+<div class="popup feedback__popup">
+  <div class="popup-content feedback__content">
+    <div class="popup-body feedback__body">
+      <div class="popup-close feedback__close">
+        <img data-src="img/icons/close.svg" alt="close"
+          class="lazyload popup-close__icon"
+          src="data:image/gif;base64,R0lGODlhEAAQAIAAAP///wAAACH5BAEAAAEALAAAAAAQABAAAAIOjI+py+0Po5y02ouzPgUAOw==">
+      </div>
+      <form action="php/mail.php" method="POST" class="feedback-form"
+        novalidate>
+        <h3 class="feedback-form__title">
+          Экспресс запрос цен <br>
+          <span class="text">Ответим за</span>
+          <span class="hours">24 часа!</span>
+        </h3>
+        <div class="feedback-form__input-wrap">
+          <input type="text" class="input input-blackout feedback-form__input"
+            placeholder="Ваше имя" name="name">
+          <div class="field-error"></div>
+        </div>
+        <div class="feedback-form__input-wrap">
+          <input type="tel" class="input input-blackout feedback-form__input"
+            placeholder="Телефон" name="phone">
+          <div class="field-error"></div>
+        </div>
+        <div class="feedback-form__input-wrap">
+          <input type="email" class="input input-blackout feedback-form__input"
+            placeholder="E-mail" name="email">
+          <div class="field-error"></div>
+        </div>
+        <div class="feedback-form__input-wrap">
+          <input type="text" class="input input-blackout feedback-form__input"
+            placeholder="Город" name="city">
+          <div class="field-error"></div>
+        </div>
+        <div class="feedback-form__input-wrap">
+          <input type="text" class="input input-blackout feedback-form__input"
+            placeholder="Что интересует?" name="search">
+          <div class="field-error"></div>
+        </div>
+        <div class="feedback-form__textarea-wrap">
+          <textarea class="textarea textarea-blackout feedback-form__textarea"
+            placeholder="Комментарий (например объём и город доставки)"
+            name="message"></textarea>
+          <div class="field-error"></div>
+        </div>
+        <input type="hidden" name="type" value="price" data-no-validate="true">
+        <input type="hidden" name="utm_source"
+          value="<?php echo $_GET["utm_source"] ?>" data-no-validate="true">
+        <input type="hidden" name="utm_medium"
+          value="<?php echo $_GET["utm_medium"] ?>" data-no-validate="true">
+        <input type="hidden" name="utm_campaign"
+          value="<?php echo $_GET["utm_campaign"] ?>" data-no-validate="true">
+        <input type="hidden" name="utm_content"
+          value="<?php echo $_GET["utm_content"] ?>" data-no-validate="true">
+        <input type="hidden" name="utm_term"
+          value="<?php echo $_GET["utm_term"] ?>" data-no-validate="true">
+        <button class="btn btn-send feedback-form__btn">
+          Отправить запрос цены
+        </button>
+        <div class="policy-form-text">
+          * Нажимая отправить, вы соглашаетесь с
+          <span class="btn-policy">условиями обработки
+            данных</span>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup-price">
+  <div class="popup-content popup-price__content">
+    <div class="popup-body popup-price__body">
+      <div class="popup-close popup-price__close">
+        <img data-src="img/icons/close.svg" alt="close"
+          class="lazyload popup-close__icon"
+          src="data:image/gif;base64,R0lGODlhEAAQAIAAAP///wAAACH5BAEAAAEALAAAAAAQABAAAAIOjI+py+0Po5y02ouzPgUAOw==">
+      </div>
+      <div class="popup-price__step-one">
+        <form action="php/mail.php" method="POST"
+          class="popup-price__form popup-price__form-step-one" novalidate
+          data-no-events="true">
+          <h4 class="popup-price__title">
+            Экспресс запрос на химию. Ответим за 1 час! (1 шаг)
+          </h4>
+          <div class="popup-price__item">
+            <input type="text" class="input popup-price__input"
+              placeholder="Что нужно" name="search">
+            <div class="field-error"></div>
+          </div>
+          <div class="popup-price__item">
+            <input type="email" class="input popup-price__input"
+              placeholder="E-mail" name="email">
+            <div class="field-error"></div>
+          </div>
+          <input type="hidden" name="type" value="price"
+            data-no-validate="true">
+          <input type="hidden" name="utm_source"
+            value="<?php echo $_GET["utm_source"] ?>" data-no-validate="true">
+          <input type="hidden" name="utm_medium"
+            value="<?php echo $_GET["utm_medium"] ?>" data-no-validate="true">
+          <input type="hidden" name="utm_campaign"
+            value="<?php echo $_GET["utm_campaign"] ?>" data-no-validate="true">
+          <input type="hidden" name="utm_content"
+            value="<?php echo $_GET["utm_content"] ?>" data-no-validate="true">
+          <input type="hidden" name="utm_term"
+            value="<?php echo $_GET["utm_term"] ?>" data-no-validate="true">
+          <button class="btn btn-send popup-price__btn">
+            Отправить запрос
+          </button>
+          <div class="policy-form-text">
+            * Нажимая отправить, вы соглашаетесь с
+            <span class="btn-policy">условиями обработки
+              данных</span>
+          </div>
+        </form>
+      </div>
+      <div class="popup-price__step-two">
+        <form action="php/mail.php" method="POST"
+          class="popup-price__form popup-price__form-step-two" novalidate>
+          <h4 class="popup-price__title">
+            Экспресс запрос на химию. Ответим за 1 час! (2 шаг)
+          </h4>
+          <div class="popup-price__item">
+            <input type="text" class="input popup-price__input"
+              placeholder="Ваше имя" name="name">
+            <div class="field-error"></div>
+          </div>
+          <div class="popup-price__item">
+            <input type="text" class="input popup-price__input"
+              placeholder="Какой объём" name="volume">
+            <div class="field-error"></div>
+          </div>
+          <div class="popup-price__item">
+            <input type="tel" class="input popup-price__input"
+              placeholder="Телефон" name="phone">
+            <div class="field-error"></div>
+          </div>
+          <div class="popup-price__item">
+            <input type="text" class="input popup-price__input"
+              placeholder="Город" name="city">
+            <div class="field-error"></div>
+          </div>
+          <div class="popup-price__item">
+            <textarea class="popup-price__textarea textarea" name="message"
+              placeholder="Комментарий"></textarea>
+            <div class="field-error"></div>
+          </div>
+          <input type="hidden" name="type" value="price"
+            data-no-validate="true">
+          <input type="hidden" name="utm_source"
+            value="<?php echo $_GET["utm_source"] ?>" data-no-validate="true">
+          <input type="hidden" name="utm_medium"
+            value="<?php echo $_GET["utm_medium"] ?>" data-no-validate="true">
+          <input type="hidden" name="utm_campaign"
+            value="<?php echo $_GET["utm_campaign"] ?>" data-no-validate="true">
+          <input type="hidden" name="utm_content"
+            value="<?php echo $_GET["utm_content"] ?>" data-no-validate="true">
+          <input type="hidden" name="utm_term"
+            value="<?php echo $_GET["utm_term"] ?>" data-no-validate="true">
+          <button class="btn btn-send popup-price__btn">
+            Отправить запрос
+          </button>
+          <div class="policy-form-text">
+            * Нажимая отправить, вы соглашаетесь с
+            <span class="btn-policy">условиями обработки
+              данных</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup-policy">
+  <div class="popup-content popup-policy__content">
+    <div class="popup-body popup-policy__body">
+      <div class="popup-close popup-policy__close">
+        <img data-src="img/icons/close.svg" alt="close"
+          class="lazyload popup-close__icon"
+          src="data:image/gif;base64,R0lGODlhEAAQAIAAAP///wAAACH5BAEAAAEALAAAAAAQABAAAAIOjI+py+0Po5y02ouzPgUAOw==">
+      </div>
+      <div class="popup-policy__text">
+        Предоставляя свои персональные данные Покупатель даёт согласие на
+        обработку, хранение и использование своих персональных данных на
+        основании ФЗ № 152-ФЗ «О персональных данных» от 27.07.2006 г. в
+        следующих целях:
+      </div>
+      <div class="popup-policy__text">
+        <div class="popup-policy__text-item">
+          1) Регистрации пользователя на сайте.
+        </div>
+        <div class="popup-policy__text-item">
+          2) Осуществление клиентской поддержки.
+        </div>
+        <div class="popup-policy__text-item">
+          3) Получения пользователем информации о маркетинговых событиях.
+        </div>
+        <div class="popup-policy__text-item">
+          4) Выполнение продавцом обязательств перед покупателем.
+        </div>
+        <div class="popup-policy__text-item">
+          5) Проведения аудита и прочих внутренних исследований с целью
+          повышения качества предоставляемых услуг.
+        </div>
+      </div>
+      <div class="popup-policy__text">
+        Под персональными данными подразумевается любая информация личного
+        характера, позволяющая установить личность покупателя такая как:
+      </div>
+      <div class="popup-policy__text">
+        <div class="popup-policy__text-item">
+          1) Фамилия, имя, отчество
+        </div>
+        <div class="popup-policy__text-item">
+          2) Дата рождения
+        </div>
+        <div class="popup-policy__text-item">
+          3) Контактный телефон
+        </div>
+        <div class="popup-policy__text-item">
+          4) Адрес электронной почты
+        </div>
+        <div class="popup-policy__text-item">
+          5) Почтовый адрес
+        </div>
+      </div>
+      <div class="popup-policy__text">
+        Персональные данные покупателей хранятся исключительно на электронных
+        носителях и обрабатываются с использованием автоматизированных систем,
+        за исключением случаев, когда неавтоматизированная обработка
+        персональных данных необходима в связи с исполнением требований
+        законодательства.
+      </div>
+      <div class="popup-policy__text">
+        Продавец обязуется не передавать полученные персональные данные
+        третьим
+        лицам, за исключением следующих случаев:
+      </div>
+      <div class="popup-policy__text">
+        По запросам уполномоченных органов государственной власти РФ только по
+        основаниям и в порядке, установленным законодательством РФ
+        стратегическим партнерам, которые работают с продавцом для
+        предоставления продуктов и услуг, или тем из них, которые помогают
+        продавцу реализовывать продукты и услуги потребителям. Мы
+        предоставляем
+        третьим лицам минимальный объем персональных данных, необходимый
+        только
+        для оказания требуемой услуги или проведения необходимой транзакции.
+        Продавец оставляет за собой право вносить изменения в одностороннем
+        порядке в настоящие правила, при условии, что изменения не
+        противоречат
+        действующему законодательству РФ. Изменения условий настоящих правил
+        вступают в силу после их публикации на сайте.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup-message">
+  <div class="popup-content popup-message__content">
+    <div class="popup-body popup-message__body">
+      <div class="popup-close popup-message__close">
+        <img data-src="img/icons/close.svg" alt="close"
+          class="lazyload popup-close__icon"
+          src="data:image/gif;base64,R0lGODlhEAAQAIAAAP///wAAACH5BAEAAAEALAAAAAAQABAAAAIOjI+py+0Po5y02ouzPgUAOw==">
+      </div>
+      <div class="popup-message__title title">Ваша заяка успешно отправлена!
+      </div>
+      <div class="popup-message__text">Наши специалисты скоро свяжутся с Вами
+      </div>
+    </div>
+  </div>
+</div>

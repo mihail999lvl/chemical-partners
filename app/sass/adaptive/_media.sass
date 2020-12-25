@@ -1,0 +1,1215 @@
+@media (max-width: 1990px)  
+  .container-responsive
+    padding: 0 15px
+
+  .header
+    &__logo
+      width: 200px
+    &__mouse
+      width: 40px
+      margin: 0 30px
+    &__nav-item:not(:last-child)
+      margin-right: 20px
+    &__nav-link
+      &.active
+        padding-bottom: 24px
+    &__location
+      margin: 0 30px
+    &__phone
+      font-size: 18px
+    &__email
+      font-size: 16px
+      &::before
+        transform: translateY(-50%)
+
+@media (max-width: 1500px)
+  .header
+    &__bottom-left
+      flex: 0 1 100%
+    &__bottom-right
+      display: none  
+    &__mouse
+      margin-right: auto
+      
+
+
+@media (max-width: 1200px) 
+  .catalog
+    &__row
+      flex-wrap: wrap
+      &:not(:last-child)
+        margin-bottom: 0
+      &:last-child
+        margin-bottom: -2%
+    &__body-item
+      flex: 0 1 47%
+      margin-bottom: 3%
+      &:not(:last-child)
+        margin-right: 0
+      &:nth-child(2n+1)
+        margin-right: 3%
+
+  .rating
+    &__best-img
+      max-width: 300px
+
+  .numbers
+    &__victory
+      display: none
+
+  .advantages-offer__form
+    flex-basis: 374px
+    flex-shrink: 0
+  .product-about__desc
+    width: calc(100% - 600px)
+  .product-about__img
+    width: 580px
+  .view-adv
+    display: none
+@media (max-width: 992px)
+  .product-about__desc
+    width: 100%
+  .product-about__img
+    width: 580px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 30px
+  .advantages-offer__title
+    font-size: 36px
+  .main-title
+    font-size: 38px
+  .product-about__footer
+    ul
+      flex-wrap: wrap
+      li
+        width: 100%
+        margin-bottom: 30px
+  .header
+    &__nav
+      padding: 0 15px 30px
+      position: fixed
+      top: 120px
+      left: 0
+      width: 100%
+      background: $gray
+      transition: .5s
+      overflow-y: auto
+      transform: translateX(-100%)
+      visibility: hidden
+      &.active
+        transform: translateX(0)
+        visibility: visible
+    &__nav-list
+      border-top: 2px solid $black
+      flex-direction: column
+      padding: 15px 0
+    &__nav-item
+      width: 100%
+      text-align: center
+      &:not(:last-child)
+        margin: 0
+        border-bottom: 2px solid #d8d8d8
+    &__nav-link
+      padding: 10px 0
+      display: block
+      &.active
+        padding-bottom: 10px
+        border: none
+    &__countries-mob
+      display: flex
+    &__burger
+      display: block 
+
+  .price-list
+    &__text
+      margin-right: 30px
+      font-size: 14px 
+    &__btn
+      padding: 10px 20px
+      font-size: 12px 
+
+  .partition
+    &__best-img
+      transform: translateX(50%)
+      right: 50%
+      width: 150px
+    &__title
+      padding-top: 120px
+
+  .hero
+    &__best-icon
+      width: 150px
+      right: 50%
+      transform: translateX(50%)
+    &__inner
+      padding-top: 120px
+      flex-direction: column
+    &__info
+      margin: 0 0 50px
+      text-align: center
+      flex: 0 1 auto
+    &__find
+      margin: 0 auto
+    &__text
+      font-size: 22px
+    &__form
+      flex: 0 1 auto
+
+  .partners
+    padding: 50px 0
+    &__inner
+      flex-wrap: wrap
+    &__item
+      flex: 0 1 19%
+      &:nth-child(9)
+        display: none
+      &:not(:last-child)
+        margin-right: 2%
+      &:nth-child(4),
+      &:nth-child(8)
+        margin-right: 0
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4)
+        margin-bottom: 2%
+      &:nth-child(1) .partners__icon
+        width: 57px
+      &:nth-child(2) .partners__icon
+        width: 69px
+      &:nth-child(3) .partners__icon
+        width: 47px
+      &:nth-child(4) .partners__icon
+        width: 85px
+      &:nth-child(5) .partners__icon
+        width: 84px
+      &:nth-child(6) .partners__icon
+        width: 79px
+      &:nth-child(7) .partners__icon
+        width: 89px
+      &:nth-child(8) .partners__icon
+        width: 82px
+
+  .about
+    &__inner
+      flex-direction: column
+    &__right
+      margin: 35px 0 0
+      flex: 0 1 auto
+    &__leader
+      justify-content: center
+
+  .advantages 
+    &__item
+      flex: 0 48%
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4)
+        margin-bottom: 30px
+    &__info
+      margin-left: 25px
+    &__subtitle,
+    &__text
+      font-size: 14px
+
+  .customers
+    &__body
+      flex-direction: column
+    &__company
+      max-width: 550px
+      margin: 0 auto 30px
+      flex: 0 1 auto
+    &__task
+      width: 100%
+      margin: 0
+      flex: 0 0 auto
+    &__docs
+      margin-top: 30px
+      flex: 0 1 auto
+      width: 100%
+      text-align: center
+
+  .exhibitions
+    &__row
+      flex-wrap: wrap
+    &__item
+      flex: 0 1 50%
+
+  .contacts
+    &.section
+      padding-bottom: 0
+    &__inner
+      flex-direction: column
+    &__info
+      flex: 0 1 auto
+      margin: 0 0 50px
+    &__title
+      text-align: center
+    &__map-wrapper
+      flex: 0 1 auto
+      width: 100%
+      width: calc(100% + 30px)
+      margin: 0 -15px
+    &__map
+      position: relative
+      width: 100%
+      left: 0
+      height: 400px
+
+  .panorama
+    height: 400px
+
+  .warehouses
+    padding-top: 80px
+    &__title
+      position: static
+      transform: none
+    &__map-iframe
+      height: 400px
+
+  .news 
+    &__inner
+      flex-direction: column
+    &__articles
+      flex: 0 1 auto
+    &__article
+      &:last-child
+        margin-right: 0
+    &__answers
+      margin-top: 50px
+      flex: 0 1 auto
+    &__answer-item
+      max-width: 600px
+      margin: 0 auto
+    &__answers-subtitle
+      text-align: center
+
+  .product
+    &__inner
+      flex-direction: column
+    &__menu
+      margin: 0
+      flex: 0 1 auto
+    &__content
+      flex: 0 1 auto
+    &__request-btn
+      &::before 
+        left: 35%
+    &__mob-selection-header
+      display: block
+
+  .aside-menu
+    &__inner
+      background: #fff
+      padding: 10px 40px
+      box-shadow: 0 20px 20px rgba(0, 0, 0, 0.07)
+    &__item
+      &:first-child
+        padding-top: 20px
+
+  .productions
+    &__inner
+      flex-direction: column
+    &__mob-selection
+      display: block
+    &__menu
+      flex: 0 1 auto
+      margin-right: 0
+      display: none
+    &__content
+      margin-top: 40px
+      flex: 0 1 auto
+
+  .rating
+    &__best-img
+      position: static
+      margin: 0 auto
+      max-width: 150px
+    &__inner
+      flex-direction: column
+      &.section
+        padding-top: 0
+    &__left
+      width: 100%
+    &__left-img
+      margin: 50px auto
+      max-width: 182px
+    &__right
+      text-align: center
+      flex: 0 1 auto
+      margin-left: 0
+    &__title
+      max-width: none
+      text-align: center
+
+  .numbers
+    &__text
+      font-size: 15px
+      margin: 0 0 35px
+    &__inner
+      align-items: center
+      flex-wrap: wrap
+      justify-content: center
+      margin-bottom: -40px
+    &__item
+      flex: 0 1 30%
+      margin-bottom: 40px
+      &:not(:last-child)
+        margin-right: 3%
+      &:nth-child(3)
+        margin-right: 0
+      &:not(:nth-child(3))
+        margin-top: 0
+
+  .mission
+    &__inner
+      flex-direction: column
+    &__photo
+      flex: 0 1 auto
+      margin: 0 0 40px
+      max-width: 400px
+    &__info
+      flex: 0 1 auto
+
+  .benefit
+    &__row
+      flex-direction: column
+      &:not(:last-child)
+        margin-bottom: 0
+      &:last-child
+        margin-bottom: -50px
+    &__item
+      margin-bottom: 50px
+      &:not(:last-child)
+        margin-right: 0
+    &__info
+      flex: 0 1 auto
+
+  .history
+    &__item-top
+      min-height: 180px
+    &__item-bottom
+      padding: 20px 25px
+
+  .footer
+    &__logo
+      width: 200px
+    &__mouse
+      width: 40px
+    &__rights
+      text-align: center
+  .characteristics
+    table
+      thead td
+        line-height: 1.2
+        padding-top: 10px
+        padding-bottom: 10px
+      p
+        margin-bottom: 10px
+
+@media (min-width: 993px)
+  // For tabs on js interrupts property display: none
+  .productions
+    &__menu
+      display: block !important
+
+@media (max-width: 768px) 
+  .title
+    margin-bottom: 35px
+    font-size: 30px
+
+  .subtitle
+    margin-bottom: 30px
+    font-size: 24px
+
+  .section  
+    padding: 40px 0
+
+  .section-half-top
+    padding-top: 20px
+
+  .section-half-bottom
+    padding-bottom: 20px
+
+  .header
+    &__top-wrapper
+      border-bottom: none
+    &__top
+      justify-content: center
+      padding: 15px 0
+    &__more
+      display: none
+    &__bottom
+      padding: 0 0 15px
+    &__mouse
+      width: 28px
+
+  .partition
+    &__title
+      margin-bottom: 0
+  
+  .catalog
+    &__header
+      margin-bottom: 30px
+      justify-content: space-between
+    &__header-item
+      &:not(:last-child)
+        margin-right: 20px
+    &__header-substrate
+      width: 60px
+    &__header-text
+      font-size: 12px
+    &__body-info
+      padding: 20px 15px
+    &__body-subtitle
+      font-size: 16px
+    &__body-text
+      font-size: 14px
+
+  .customers
+    &__slider
+      margin-bottom: 30px
+    &__header
+      border-bottom: 1px solid $white
+      margin-bottom: 0
+      flex-direction: column
+    &__header-name,
+    &__header-task,
+    &__header-date
+      flex: 0 1 auto
+    &__header-task
+      margin: 10px 0
+    &__company
+      text-align: center
+      width: 100%
+      max-width: none
+    &__bottom
+      padding-top: 30px
+
+  .contacts
+    &.section
+      padding-top: 40px
+  
+  .family
+    &__inner
+      margin-top: 50px
+    &__row
+      flex-direction: column
+    &__item
+      &:not(:last-child)
+        margin: 0 0 50px
+
+  .comrades
+    &__block
+      &:not(:last-child)
+        padding-bottom: 0
+    &__subtitle
+      font-size: 20px
+      text-align: center
+      margin-bottom: 30px
+    &__row
+      flex-direction: column
+      &:not(:last-child)
+        margin-bottom: 0
+      &:last-child
+        margin-bottom: -60px
+    &__item
+      margin-bottom: 60px
+      &:not(:last-child)
+        margin-right: 0
+    &__icon-wrapper
+      flex: 0 0 60px
+    &__info
+      flex: 0 1 auto
+    &__location
+      font-size: 16px
+    &__text
+      font-size: 14px
+
+  .warehouses
+    padding-top: 40px
+
+  .news
+    &__inner
+      margin-bottom: 30px
+    &__articles-row
+      flex-direction: column
+      &:not(:last-child)
+        margin-bottom: 0
+    &__articles
+      margin-bottom: -40px
+    &__article
+      margin: 0 auto 40px
+      flex: 0 1 auto
+      width: 500px
+      max-width: 100%
+      &:last-child
+        margin-right: auto
+
+  .product
+    &__form-title
+      font-size: 20px
+      margin-bottom: 20px
+    &__request-row
+      flex-direction: column
+      margin-bottom: 0
+    &__request-item
+      margin-bottom: 20px
+      &:not(:last-child)
+        margin-right: 0
+    &__request-textarea-wrap
+      margin-bottom: 15px
+    &__request-btn
+      &::before 
+        left: 22%
+    &__block
+      margin-bottom: 30px
+    &__row
+      &:not(:last-child)
+        margin-bottom: 15px
+    &__item
+      &:not(:last-child)
+        margin-right: 15px
+    &__item-top 
+      min-height: 210px
+    &__item-title
+      padding: 15px
+      font-size: 16px
+    &__item-bottom
+      padding: 20px
+      font-size: 14px
+
+  .productions
+    &__row
+      flex-direction: column
+      &:not(:last-child)
+        margin-bottom: 0
+      &:last-child
+        margin-bottom: -30px
+    &__item
+      min-height: 200px
+      flex: 0 1 auto
+      margin-bottom: 30px
+      &:not(:last-child)
+        margin-right: 0
+    &__item-title
+      font-size: 16px
+
+  .numbers
+    &__item-top
+      min-height: 0
+    &__item-num
+      font-size: 44px
+      margin-bottom: 3px
+    &__item-category
+      font-size: 14px
+    &__item-desc
+      margin-top: 5px
+    &__circle-wrap
+      width: 100px
+      height: 100px
+    &__circle
+      width: 95px
+      height: 95px
+    &__circle-text
+      font-size: 16px
+      margin: 9px 0 0
+    &__circle-num
+      font-size: 36px
+
+  .reviews
+    &__top-item
+      padding: 30px
+
+  .benefit
+    &__item-title
+      font-size: 20px
+      margin-bottom: 20px
+
+  .history
+    &__inner
+      flex-direction: column
+    &__middle-line 
+      display: none
+    &__left
+      flex: 0 1 auto
+    &__item
+      margin-bottom: 75px
+      &:not(:first-child) 
+        margin-top: 0
+    &__item-top
+      min-height: 160px
+    &__item-line
+      right: 50%  
+      top: auto
+      transform: translate(50%, 100%)
+      width: 4px
+      height: 100px
+      bottom: 13px
+    &__item-year
+      transform: none
+      top: auto
+      bottom: -50px
+      right: 34%
+      font-size: 14px
+    &__right
+      flex: 0 1 auto
+      margin: 0 0 -35px
+      .history__item 
+        .history__item-line 
+          transform: translate(-50%, 100%)
+          left: 50%
+        &:last-child .history__item-line 
+          height: 40px
+          &::before,
+          &::after
+            top: 50px
+      .history__item-year
+        left: auto
+        right: 34%
+
+  .instagram
+    &__inner
+      flex-direction: column
+
+  .footer
+    &__inner
+      flex-direction: column
+    &__social
+      margin: 20px 0 15px
+    &__rights
+      font-size: 14px
+
+  .popup-message
+    &__body
+      padding: 50px 40px 40px
+    &__title
+      margin-bottom: 20px
+      font-size: 22px
+    &__text
+      font-size: 14px
+
+  .advantages-offer .container
+    flex-wrap: wrap
+    > div
+      width: 100%
+  .partition__best-img_left
+    left: auto
+  .advantages-offer
+    &__text
+      margin-top: 60px
+    &__title
+      font-size: 24px
+    &__desc
+      font-size: 16px
+    &__form
+      margin-top: 30px
+      margin-left: auto
+      margin-right: auto
+  .advantages-offer__title+.advantages-offer__desc
+    margin-top: 25px
+  .offer-form
+    padding: 30px 15px
+  .express
+    &__title
+      font-size: 24px
+    &__inputs
+      padding: 0 15px
+      .feedback-form__input-wrap
+        width: calc(50% - 5px)
+        &_textarea
+          width: 100%
+    &__comment
+      padding: 0 15px
+  .product
+    &__row
+      flex-wrap: wrap
+    &__img
+      margin-top: 120px
+      min-width: auto
+      width: auto
+    &__title
+      font-size: 24px
+      padding-left: 0
+      margin-bottom: 30px
+    &__subtitle
+      font-size: 16
+    &__desc
+      padding-right: 0
+      .btn-adv
+        margin: 0 auto
+    &__callme
+      text-align: center
+  .articles
+    &__row
+      flex-wrap: wrap
+    .article
+      width: 100%
+      &__title
+        line-height: 1.2
+        margin: 15px 0 10px
+      &__desc
+        margin-bottom: 15px
+  .product-about
+    padding-bottom: 0
+    .container
+      flex-wrap: wrap
+    &__img
+      width: 100%
+      height: auto
+      .photo-full
+        height: auto
+      img
+        width: 100%
+    .photo-thumb-row
+      li
+        width: 78px
+        height: auto
+        img
+          width: 100%
+    &__desc
+      width: 100%
+      margin-top: 30px
+    &__title
+      font-size: 24px
+      margin-bottom: 15px
+    &__footer
+      padding-bottom: 0
+      ul
+        flex-wrap: wrap
+        margin-bottom: 30px
+        padding: 0 30px
+        li
+          width: 100%
+          margin-bottom: 25px
+  .product-adv
+    padding-top: 50px
+    padding-bottom: 50px
+    &__title
+      margin-bottom: 30px
+      font-size: 24px
+      line-height: 1.2
+    ul
+      flex-wrap: wrap
+      justify-content: space-around
+      li
+        margin-bottom: 12px
+  .view-adv
+    display: none
+  .characteristics
+    &__title
+      font-size: 24px
+      line-height: 1.2
+
+    table
+      border: 4px solid #1680db
+      width: 100%
+      thead td
+        font-size: 12px
+        height: auto
+        line-height: 1.2
+        padding: 10px
+      td
+        padding: 10px 5px
+        font-size: 11px
+        line-height: 1.2
+        p
+          margin-bottom: 10px
+    &__consultation
+      font-size: 16px
+  .certificates__title
+    margin: 50px 0 30px
+    text-align: center
+    font-weight: 300
+    font-size: 24px
+    line-height: 1.2
+@media (max-width: 480px)
+  .mob-entire-width
+    width: calc(100% + 30px)
+    margin: 0 -15px
+    &.offer-form
+      width: 100%
+      margin: 0
+
+  .input,
+  .textarea
+    padding: 15px 20px
+    font-size: 14px
+
+  .btn
+    font-size: 14px
+    padding: 15px 20px
+    &-search
+      padding: 17px 20px 17px 40px
+      &::before
+        left: 33%
+    &-send
+      padding: 17px 20px 17px 30px
+      &::before
+        left: 5%
+    &-catalog
+      padding: 17px 20px 17px 40px
+      &::before
+        left: 14%
+    &-message
+      padding: 17px 20px 17px 40px
+      &::before
+        left: 5%
+
+  .slick
+    &-arrow img
+      width: 22px
+
+  .mobile-menu
+    display: flex
+
+  .price-list
+    bottom: 59px
+    border-top: none
+    &__text
+      display: none
+    &__btn
+      font-size: 12px
+      width: 300px
+      max-width: 100%
+
+  .partition
+    &__best-img
+      width: 100px
+    &__title
+      padding: 80px 0 30px
+  
+  .hero
+    background-size: auto
+    background-position: top center
+    &__best-icon
+      width: 100px
+    &__inner
+      padding: 80px 0 0
+    &__text
+      font-size: 16px
+      margin: 15px 0 25px
+    &__search
+      flex-direction: column
+    &__search-btn
+      flex: 0 1 auto
+    &__find-text
+      margin: 13px 0
+    &__form
+      max-width: none
+      &.offer-form
+        max-width: 100%
+  .advantages-offer__form
+    max-width: 100%
+  .partition
+    &__title
+      margin-bottom: 0
+
+  .partners
+    &__inner
+      margin-bottom: -40px
+    &__item
+      flex: 0 1 46%
+      &:nth-child(n)
+        margin: 0 0 40px
+
+  .about
+    &__text
+      font-size: 14px
+    &__leader
+      flex-direction: column
+    &__leader-img
+      width: 130px
+    &__leader-info
+      width: 100%
+      margin: 20px 0 0
+    &__leader-signature
+      margin: 0 auto
+      width: 140px
+      
+  .advantages
+    &__inner
+      flex-direction: column
+    &__item
+      flex: 0 1 auto
+      &:nth-child(5)
+        margin-bottom: 30px
+    &__photo
+      flex: 0 0 50px
+    &__info
+      flex: 0 1 auto
+    
+  .catalog
+    &__header
+      flex-wrap: wrap
+      justify-content: center
+    &__header-item
+      flex: 0 1 46%
+      &:not(:last-child)
+        margin-right: 4%
+      &:nth-child(2n)
+        margin-right: 0
+      &:nth-child(1),
+      &:nth-child(2)
+        margin-bottom: 8%
+    &__header-img
+      width: calc(100% - 5px)
+      height: calc(100% - 5px)
+    &__header-text
+      margin-top: 0
+      font-size: 10px
+    &__body-img
+      min-height: 90px
+    &__body-info
+      padding: 12px
+    &__body-subtitle,
+      font-size: 10px
+      margin-bottom: 10px
+    &__body-text
+      font-size: 10px
+
+  .customers
+    &__slider
+      padding: 0
+    &__company-link,
+    &__company-text
+      font-size: 14px
+    &__task-open-wrapper
+      display: block
+    &__task-additionally
+      display: none
+    &__task-item
+      font-size: 14px
+      margin-bottom: 15px
+
+  .contacts
+    &__item
+      &:not(:last-child)
+        margin-bottom: 20px
+    &__text
+      font-size: 14px
+
+  .family-text 
+    font-size: 14px
+    &__item
+      &:not(:last-child)
+        margin-bottom: 20px
+
+  .family
+    &__item
+      font-size: 14px
+    &__img
+      max-width: 150px
+
+  .comrades
+    &__item
+      flex-direction: column
+    &__icon-wrapper
+      flex: 0 1 auto
+      width: 100%
+    &__icon
+      margin: 0 auto
+      margin-bottom: 41px
+    &__info
+      margin-left: 0
+      text-align: center
+    &__location
+      margin-bottom: 10px
+    &__btn
+      width: 100%
+  
+  .news
+    &__article
+      margin-bottom: -15px
+    &__article
+      margin: 0 auto 15px
+    &__article-top 
+      min-height: 180px
+    &__article-title
+      padding: 15px 20px
+    &__article-bottom
+      padding: 15px 15px 15px 20px
+    &__answer-item
+      padding: 15px 20px
+      &:not(:last-child)
+        margin-bottom: 15px
+
+  .product
+    &__form
+      padding: 20px 15px
+    &__search-row
+      flex-direction: column
+    &__search-input
+      margin-bottom: 20px
+    &__block
+      margin-top: 0
+    &__item-top
+      min-height: 100px
+    &__item-title
+      font-size: 12px
+      padding: 10px
+    &__item-bottom
+      display: none
+    
+  .aside-menu
+    &-inner
+      padding: 0 20px
+
+  .pagination
+    &__item
+      font-size: 14px
+      padding: 7px 14px
+
+  .productions
+    &__row
+      &:last-child
+        margin-bottom: -15px
+    &__item
+      width: calc(100% + 30px)
+      margin-left: -15px
+      margin-bottom: 15px
+    &__item-title
+      padding: 15px 20px
+  
+  .rating
+    &__best-img
+      max-width: 100px
+
+  .numbers
+    &__item
+      flex: 0 1 46%
+      &:not(:last-child)
+        margin-right: 4%
+      &:nth-child(2),
+      &:nth-child(4),
+        margin-right: 0
+      &:last-child
+        flex: 0 1 100%
+
+  .mission
+    &__photo
+      max-width: 200px
+      margin-bottom: 30px
+    &__text
+      font-size: 14px
+    &__author
+      flex-direction: column
+      margin-top: 30px
+    &__author-info
+      font-size: 14px
+    &__author-icon
+      width: 100%
+      margin-top: 25px
+    &__author-signature
+      margin: 0 auto
+      max-width: 140px
+
+  .reviews
+    &__top-item
+      margin-bottom: 40px
+    &__top-text
+      font-size: 14px
+      &:not(:last-child) 
+        margin-bottom: 15px
+    &__top-info
+      margin-top: 30px
+      flex-direction: column
+    &__top-icon-wrapper
+      margin: 0 0 25px
+      width: 100%
+    &__top-icon
+      margin: 0 auto
+    &__top-desc
+      margin-left: 0
+      font-size: 14px
+    &__top-wording
+      margin: 5px 0
+    &__bottom-item
+      &.active .reviews__bottom-img
+        border-color: transparent
+
+  .benefit
+    &__item
+      flex-direction: column
+    &__icon-wrapper
+      flex: 0 1 auto
+      width: 100%
+      margin-bottom: 35px
+    &__icon
+      margin: 0 auto
+    &__info
+      margin-left: 0
+    &__item-title
+      text-align: center
+    &__list-item
+      font-size: 14px
+
+  .history
+    &__item-bottom
+      font-size: 14px
+    &__item-year
+      right: 25%
+    &__right
+      .history__item-year
+        right: 25%
+
+  .instagram
+    &__item
+      flex: 0 1 auto
+      width: calc(100% + 30px)
+
+  .footer
+    padding: 20px 0 15px
+    &__mouse
+      width: 28px
+      margin-left: 20px
+
+  .popup
+    &-content
+      padding: 0
+    &-body
+      min-height: 100vh
+      padding: 40px 15px 15px
+      width: 100%
+
+  .feedback-form
+    padding: 40px 20px
+    &__title
+      font-size: 20px
+  
+  .popup-policy
+    &__body
+      font-size: 14px
+
+  .popup-message
+    &__title
+      font-size: 20px
+    &__text
+      font-size: 12px
+  .characteristics
+    .table-container
+      margin: 0 -15px
+    table
+      thead
+        td
+          font-size: 10px
+          padding: 10px 3px
+
+      td
+        font-size: 10px
+        padding: 10px 3px
+  .express .feedback-form__input-wrap
+    width: 100%
+    &_textarea
+      width: 100%
+// For preloader on height
+@media (max-height: 600px)
+  .preloader
+    &__mouse
+      display: none
+
+@media (max-height: 460px)
+  .preloader
+    &__best
+      display: none

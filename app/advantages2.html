@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru" class="lock">
+
+//= templates/head.html
+
+<body>
+<div class="page advantages">
+
+    //= templates/preloader.html
+    //= templates/header.html
+    //= templates/mobile-menu.html
+    //= templates/price-list.html
+
+    <main class="content">
+
+        <section class="partition offset-from-header lazyload"
+                 data-bg="img/advantages-bg.jpg">
+            <div class="container-responsive">
+                <div class="partition__best">
+                    <img data-src="img/icons/icis-top-100.svg" alt="ICIS top 100"
+                         class="partition__best-img lazyload partition__best-img_left"
+                         src="data:image/gif;base64,R0lGODlh0ACJAIAAAP///wAAACH5BAEAAAEALAAAAADQAIkAAALVjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vv1MAADs=">
+                </div>
+            </div>
+            <section class="advantages-offer">
+                <div class="container">
+                    <div class="advantages-offer__text">
+                        <p class="advantages-offer__title">Купите <span>волокно</span><br>
+                            <span>по низким ценам</span></p>
+                        <p class="advantages-offer__title">До 100% отсрочки платежа</p>
+                        <p class="advantages-offer__desc"><b>Компания ХимПартнеры работает на рынке с 2001 года.</b><br>
+                           Нашим высококачественным сырьем пользуется большое число различных производств.</p>
+                        <p class="advantages-offer__desc"><b>Мы можем предложить волокно (более 30 видов) для вашего производства на выгодных условиях.</b></p>
+                    </div>
+                    <div class="advantages-offer__form">
+                        <form action="php/mail.php" method="POST" class="hero__form feedback-form mob-entire-width offer-form" novalidate>
+                            <p class="offer-form__title">Экспресс запрос цены 24/7</p>
+                            <p class="offer-form__subtitle">Укажите, куда выслать прайс-лист</p>
+                            <div class="feedback-form__input-wrap">
+                              <input type="text" placeholder="Ваше имя" name="name">
+                              <div class="field-error"></div>
+                            </div>
+                            <div class="feedback-form__input-wrap">
+                              <input type="email" placeholder="E-mail" name="email">
+                              <div class="field-error"></div>
+                            </div>
+                            <div class="feedback-form__input-wrap">
+                              <input type="text" placeholder="Что именно вы ищете?" name="source">
+                              <div class="field-error"></div>
+                            </div>
+                            <div class="feedback-form__input-wrap">
+                              <input type="text" placeholder="Какой объём нужен?" name="volume">
+                              <div class="field-error"></div>
+                            </div>
+                            <div class="masked-group feedback-form__input-wrap">
+                                <div class="masked-group__country">+7</div>
+                                <input type="tel" class="masked-group__phone" placeholder="(999) 999-99-99" name="phone">
+                                <div class="field-error"></div>
+                            </div>
+                            <div class="masked-group feedback-form__input-wrap">
+                              <input type="text" placeholder="В какой город доставка?" name="city">
+                              <div class="field-error"></div>
+                            </div>
+                            <input type="hidden" name="type" value="price" data-no-validate="true">
+                            <input type="hidden" name="utm_source" value="" data-no-validate="true">
+                            <input type="hidden" name="utm_medium" value="" data-no-validate="true">
+                            <input type="hidden" name="utm_campaign" value="" data-no-validate="true">
+                            <input type="hidden" name="utm_content" value="" data-no-validate="true">
+                            <input type="hidden" name="utm_term" value="" data-no-validate="true">
+                            <button class="btn-adv btn-adv_blue">Отправить запрос цен</button>
+                            <p class="offer-form__comment">Нажимая «отправить запрос» вы соглашаетесь с <a href="#">политикой обработки персональных данных</a></p>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="product-about">
+            <div class="container">
+                <div class="product-about__img product-slider">
+                    <div class="photo-full">
+                        <img src="img/catalog/thumb1.jpg">
+                    </div>
+                    <ul class="photo-thumb-row">
+                       <li class="active" data-fullSrc="img/catalog/thumb1.jpg"><img src="img/catalog/thumb1.jpg"></li>
+                       <li data-fullSrc="img/catalog/catalog-product-1.jpg"><img src="img/catalog/thumb2.jpg"></li>
+                       <li data-fullSrc="img/catalog/thumb3.jpg"><img src="img/catalog/thumb3.jpg"></li>
+                       <li data-fullSrc="img/catalog/thumb4.jpg"><img src="img/catalog/thumb4.jpg"></li>
+                    </ul>
+                </div>
+                <div class="product-about__desc">
+                    <p class="product-about__title">Полиэфирное волокно</p>
+                    <p class="product-about__text">
+                        Полиэфиры (или полиэстеры) — высокомолекулярные соединения, получаемые поликонденсацией многоосновных кислот или их ангидридов с многоатомными спиртами. Известны природные (янтарь, древесная смола, шеллак и др.) и искусственные полиэфиры. Практическое применение получили глифталевые смолы, полиэтилентерефталат, полиэфирмалеинаты и полиэфиракрилаты.
+                    </p>
+                    <div class="product-about__properties">
+                        <p>Основные свойства:</p>
+                        <uL>
+                            <li><span>—</span>Применение уникальной разработки "blind hole" (глухое отверстие), обеспечивающую превосходную передачу нагрузки.</li>
+                            <li><span>—</span>Диапазон E max.: от 20 кг до 5 000 кг</li>
+                            <li><span>—</span>Низкое влияние боковых нагрузок</li>
+                            <li><span>—</span>Упрощенная установка</li>
+                            <li><span>—</span>Специальная разработка для бункерных весов, миксеров и платформенных весов</li>
+                            <li><span>—</span>Сертификат W&M</li>
+                        </uL>
+                    </div>
+                </div>
+                <div class="product-about__footer">
+                    <ul>
+                        <li>Доступно на складе</li>
+                        <li>Металл: Аллюминий</li>
+                        <li>Срок гарантии 3 года</li>
+                        <li>Средний срок службы 10 лет</li>
+                    </ul>
+                    <div class="product-about__madein">
+                        <ul>
+                            <li>Производства стран:</li>
+                            <li><img src="img/icons/madein-1.png"><span>Индия</span></li>
+                            <li><img src="img/icons/madein-2.png"><span>Узбекистан</span></li>
+                            <li><img src="img/icons/madein-3.png"><span>Китай</span></li>
+                            <li><img src="img/icons/madein-4.png"><span>Корея</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product-adv">
+            <div class="container">
+                <p class="product-adv__title">Преимущества полиэфирного волокна</p>
+                <ul>
+                    <li>
+                        <img src="img/icons/adv-1.png">
+                        <span>Высокая прочность</span>
+                    </li>
+                    <li>
+                        <img src="img/icons/adv-2.png">
+                        <span>Формоустойчивость</span>
+                    </li>
+                    <li>
+                        <img src="img/icons/adv-3.png">
+                        <span>Теплоустойчивость</span>
+                    </li>
+                    <li>
+                        <img src="img/icons/adv-4.png">
+                        <span>Отличная стойкость цвета</span>
+                    </li>
+                    <li>
+                        <img src="img/icons/adv-5.png">
+                        <span>Защита от влаги</span>
+                    </li>
+                    <li>
+                        <img src="img/icons/adv-6.png">
+                        <span>Защита от загрязнения</span>
+                    </li>
+                    <li>
+                        <img src="img/icons/adv-7.png">
+                        <span>Долговечность</span>
+                    </li>
+                    <li>
+                        <img src="img/icons/adv-8.png">
+                        <span>Низкая гигроскопичность</span>
+                    </li>
+                </ul>
+                <div class="view-adv">
+                    <div class="view-adv__item view-adv__item_1">
+                        <p class="view-adv__item-title">Высокая прочность</p>
+                        <p class="view-adv__item-desc">Прочность волокна более 6.0g/De.</p>
+                        <img src="img/icons/adv-blue-1.png">
+                    </div>
+                    <div class="view-adv__item view-adv__item_2">
+                        <img src="img/icons/adv-blue-2.png">
+                        <div>
+                            <p class="view-adv__item-title">Формоустойчивость</p>
+                            <p class="view-adv__item-desc">Стабильность PCS при нагревании обеспечивает максимальную формоустойчивость изделиям из него.</p>
+                        </div>
+                    </div>
+                    <div class="view-adv__item view-adv__item_3">
+                        <img src="img/icons/adv-blue-3.png">
+                        <div>
+                          <p class="view-adv__item-title">Теплоустойчивость</p>
+                          <p class="view-adv__item-desc">Устойчивость к высоким температурам дает стабильность нитям при работе на швейных станках.</p>
+                        </div>
+                    </div>
+                    <div class="view-adv__item view-adv__item_4">
+                        <img src="img/icons/adv-blue-4.png">
+                        <div>
+                            <p class="view-adv__item-title">Отличная стойкость цвета</p>
+                            <p class="view-adv__item-desc">Превосходная стойкость цвета PCS к истиранию предотвращает обесцвечивание ткани.</p>
+                        </div>
+                    </div>
+                    <div class="view-adv__item view-adv__item_5">
+                        <img src="img/icons/adv-blue-5.png">
+                        <p class="view-adv__item-title">Защита от влаги</p>
+                        <p class="view-adv__item-desc">Стабильность PCS при нагревании обеспечивает максимальную формоустойчивость изделиям из него.</p>
+                    </div>
+                    <div class="view-adv__item view-adv__item_6">
+                        <div>
+                            <p class="view-adv__item-title">Защита от загрязнения</p>
+                            <p class="view-adv__item-desc">Устойчивость к высоким температурам дает стабильность нитям
+                                при работе на швейных станках.</p>
+                        </div>
+                        <img src="img/icons/adv-blue-6.png">
+                    </div>
+                    <div class="view-adv__item view-adv__item_7">
+                        <div>
+                            <p class="view-adv__item-title">Долговечность</p>
+                            <p class="view-adv__item-desc">Превосходная стойкость цвета PCS к истиранию предотвращает обесцвечивание ткани.</p>
+                        </div>
+                        <img src="img/icons/adv-blue-7.png">
+                    </div>
+                    <div class="view-adv__item view-adv__item_8">
+                        <div>
+                            <p class="view-adv__item-title">Низкая гигроскопичность</p>
+                            <p class="view-adv__item-desc">Стабильность PCS при нагревании обеспечивает максимальную формоустойчивость изделиям из него.</p>
+                        </div>
+                        <img src="img/icons/adv-blue-8.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="characteristics">
+            <div class="container">
+                <p class="characteristics__title">Характеристики полиэфирного волокна</p>
+                <div class="table-container">
+                  <table>
+                      <thead>
+                          <tr>
+                              <td>Наименование продукции</td>
+                              <td>Разновидность</td>
+                              <td>Применение</td>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr class="tr_bg-white">
+                              <td>
+                                <p><b>Полиэфирное волокно полое</b></p>
+                                <p><b>Полиэфирное волокно высокоизвитое</b></p>
+                                <p><b>Полиэфирное волокно силиконизированное</b></p>
+                              </td>
+                              <td>
+                                  <p>3D(0,33 текс) х 64мм</p>
+                                  <p>7D(0,78 текс) х 32мм/64мм</p>
+                                  <p>15D(1,7 текс) х 32мм/64мм</p>
+                              </td>
+                              <td>
+                                  Производство наполнителя для одеял, подушек, игрушек
+                              </td>
+                          </tr>
+                          <tr class="tr_bg-gray">
+                              <td><b>Полиэфирное волокно</b> регулярное</td>
+                              <td>
+                                  <p><b>6D(0,67 текс) х 64мм</b></p>
+                                  <p><b>7D(О,78 текс) x 64мм</b></p>
+                              </td>
+                              <td>
+                                  <b>Производство синтепона,</b> наполнителей для
+                                  <b>одеял, подушек, игрушек, деталей мебели</b>
+                              </td>
+                          </tr>
+                          <tr class="tr_bg-white">
+                              <td><b>Полиэфирное волокно</b> бикомпонентное</td>
+                              <td>4D х 51мм</td>
+                              <td>Термосвязывающее волокно для производства синтепона бикомпонентное и других нетканых материалов</td>
+                          </tr>
+                          <tr class="tr_bg-gray">
+                              <td><b>Полиэфирное волокно</b> регенерированное (вторичное)</td>
+                              <td>
+                                  <p><b>6D(0,67 текс) х 64мм</b></p>
+                                  <p><b>7D(О,78 текс) x 64мм</b></p>
+                              </td>
+                              <td>
+                                  Термосвязывающее волокно для производства синтепона бикомпонентное и других нетканых материалов
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+                </div>
+                <p class="characteristics__consultation">
+                    Если вам нужна консультация по полиэфирному волокну просто позвоните по номеру <b><a href="tel:74952155871">+7 (495) 215-58-71</a></b> или напишите на почту <a class="mailto" href="mailto:volokno@propartners.ru">volokno@propartners.ru</a>
+                </p>
+            </div>
+        </section>
+        <section class="certificates">
+            <div class="container">
+                <p class="certificates__title">
+                    Сертификаты по полиэфирному волокну
+                </p>
+                <div class="customers__task-slider-certificates">
+                    <div class="customers__task-slider-item">
+                        <a href="img/certificates/certificate-1.jpg" class="wrapper-photo" data-fancybox="customers-slider">
+                            <img src="img/certificates/certificate-1.jpg" alt="photo" class="lazyload mw-100 customers__task-slider-img">
+                            <div class="magnifier"></div>
+                        </a>
+                    </div>
+                    <div class="customers__task-slider-item">
+                        <a href="img/certificates/certificate-2.jpg" class="wrapper-photo" data-fancybox="customers-slider">
+                            <img src="img/certificates/certificate-2.jpg" alt="photo" class="lazyload mw-100 customers__task-slider-img">
+                            <div class="magnifier"></div>
+                        </a>
+                    </div>
+                    <div class="customers__task-slider-item">
+                        <a href="img/certificates/certificate-3.jpg" class="wrapper-photo" data-fancybox="customers-slider">
+                            <img src="img/certificates/certificate-3.jpg" alt="photo" class="lazyload mw-100 customers__task-slider-img">
+                            <div class="magnifier"></div>
+                        </a>
+                    </div>
+                    <div class="customers__task-slider-item">
+                        <a href="img/certificates/certificate-4.jpg" class="wrapper-photo" data-fancybox="customers-slider">
+                            <img src="img/certificates/certificate-4.jpg" alt="photo" class="lazyload mw-100 customers__task-slider-img">
+                            <div class="magnifier"></div>
+                        </a>
+                    </div>
+                    <div class="customers__task-slider-item">
+                        <a href="img/certificates/certificate-5.jpg" class="wrapper-photo" data-fancybox="customers-slider">
+                            <img src="img/certificates/certificate-5.jpg" alt="photo" class="lazyload mw-100 customers__task-slider-img">
+                            <div class="magnifier"></div>
+                        </a>
+                    </div>
+                    <div class="customers__task-slider-item">
+                        <a href="img/certificates/certificate-1.jpg" class="wrapper-photo" data-fancybox="customers-slider">
+                            <img src="img/certificates/certificate-1.jpg" alt="photo" class="lazyload mw-100 customers__task-slider-img">
+                            <div class="magnifier"></div>
+                        </a>
+                    </div>
+                    <div class="customers__task-slider-item">
+                        <a href="img/certificates/certificate-2.jpg" class="wrapper-photo" data-fancybox="customers-slider">
+                            <img src="img/certificates/certificate-2.jpg" alt="photo" class="lazyload mw-100 customers__task-slider-img">
+                            <div class="magnifier"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    //= templates/footer.html
+    //= templates/modals.html
+
+</div>
+
+//= templates/scripts.html
+
+
+</body>
+
+</html>

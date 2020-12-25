@@ -1,0 +1,378 @@
+*,
+*::before,
+*::after 
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  // For slick-slider width and flexbox
+  min-height: 0
+  min-width: 0
+
+ul, li
+  list-style: none
+
+a
+  text-decoration: none
+  color: inherit
+  font-size: inherit
+
+input,
+button,
+textarea
+  border: none
+  outline: none
+  color: inherit
+  font-size: inherit
+  font-family: inherit
+  line-height: 1.2
+
+textarea
+  overflow: auto
+
+img
+  display: block
+
+body
+  font-family: $GothamPro
+  font-size: 16px
+  line-height: 1.75
+  font-style: normal
+  color: $black
+  background-color: $white
+
+html.lock,
+html.lock body
+  overflow: hidden
+
+h1, h2, h3, h4, h5, h6
+  font-family: inherit
+  color: inherit
+  font-weight: 700
+  line-height: 1.3
+
+.main-title
+  color: $white
+  font-size: 64px
+  line-height: 1.25
+
+.title
+  font-size: 40px
+  text-align: center
+  margin-bottom: 60px
+
+.subtitle
+  font-size: 30px
+  line-height: 1.4
+  margin-bottom: 60px
+  text-align: center
+
+.container  
+  width: 1230px
+  padding: 0 15px
+  margin: 0 auto
+  max-width: 100%
+
+.container-responsive
+  padding: 0 60px
+
+.container-slider
+  width: 1340px
+
+.section
+  padding: 80px 0
+
+.section-half-top
+  padding-top: 40px
+
+.section-half-bottom
+  padding-bottom: 40px
+
+.mw-100
+  max-width: 100%
+
+.show
+  display: block
+
+.hide
+  display: none
+
+.page
+  display: flex
+  flex-direction: column
+  overflow: hidden
+  min-height: 100vh
+
+.light
+  font-weight: 300
+
+.bold
+  font-weight: 700
+
+.input
+  display: block
+  width: 100%
+  color: $grayBlack
+  padding: 20px 30px
+  border: 2px solid transparent
+  &:focus
+    border-color: $blue
+  &-blackout
+    background: #e9e9e9
+    &:focus
+      background: #fff
+  &.error
+    border-color: red
+  &.valid
+    border-color: green
+
+.textarea
+  display: block
+  width: 100%
+  color: $grayBlack
+  padding: 20px 30px
+  border: 2px solid transparent
+  resize: none
+  &:focus
+    border-color: $blue
+  &-blackout
+    background: #e9e9e9
+    &:focus
+      background: #fff
+  &.error
+    border-color: red
+  &.valid
+    border-color: green
+
+
+.btn
+  display: inline-block
+  line-height: 1.2
+  color: #fff
+  text-align: center
+  background: $blueDark
+  text-transform: uppercase
+  font-size: 14px
+  font-weight: 700
+  padding: 20px 40px
+  cursor: pointer
+  transition: .3s
+  &:hover
+    background: $black
+  &-search
+    padding: 20px 40px 20px 70px
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      top: 50%
+      transform: translateY(-55%)
+      background-image: url('../img/icons/search-2.svg')
+      background-repeat: no-repeat
+      left: 25%
+      @include size(18px, 18px)
+  &-send
+    padding: 20px 40px 20px 50px
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      top: 50%
+      transform: translateY(-55%)
+      background-image: url('../img/icons/send.svg')
+      background-repeat: no-repeat
+      left: 7%
+      @include size(18px, 18px)
+  &-catalog
+    padding: 20px 40px 20px 70px
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      top: 50%
+      transform: translateY(-55%)
+      background-image: url('../img/icons/catalog.svg')
+      background-repeat: no-repeat
+      left: 28%
+      @include size(18px, 12px)
+  &-message
+    padding: 20px 50px 20px 80px
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      top: 50%
+      transform: translateY(-48%)
+      background-image: url('../img/icons/testimonials.svg')
+      background-repeat: no-repeat
+      left: 13%
+      @include size(18px, 19px)
+  &-transparent
+    background: transparent
+    color: #fff
+    border: 2px solid $white 
+    &:hover
+      border-color: $black 
+
+.field-error
+  color: red
+  text-align: right
+  font-size: 12px
+  font-weight: 700
+
+.wrapper-photo
+  display: inline-block
+  position: relative
+  vertical-align: middle
+  &:hover
+    .magnifier  
+      opacity: 1
+
+.magnifier  
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  background: rgba(0, 0, 0, .5)
+  transition: .3s
+  opacity: 0
+  &::before
+    content: ""
+    width: 56px
+    height: 56px
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-image: url('../img/icons/zoom@2x.png')
+    background-repeat: no-repeat
+    background-size: cover
+
+.video-block
+  cursor: pointer
+  position: relative
+  vertical-align: middle
+  display: inline-block
+  &::before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, .5)
+  &:hover
+    .video-block__btn
+      transform: translate(-50%, -50%) scale(1.15)
+  &__btn
+    transition: .5s
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    @include size(96px, 110px)
+
+.map-protection
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: rgba(0, 0, 0, .6)
+  cursor: help
+  color: #ffffff
+  font-size: 24px
+  font-weight: 300
+  transition: .5s
+  padding: 20px
+  opacity: 0
+  text-align: center
+  @include flexbox(flex, center, center)
+  &.active
+    opacity: 1
+
+@keyframes fadeIn
+  0%
+    opacity: .1
+  100%
+    opacity: 1
+
+@keyframes fadeToggle
+  0%
+    opacity: 1
+  50%
+    opacity: 0
+  100%
+    opacity: 1
+
+.policy-form-text
+  text-align: center
+  font-size: 14px
+  color: $grayBlack
+  margin-top: 25px
+  span
+    color: $blue
+    &:hover
+      cursor: pointer
+      text-decoration: underline
+
+.underline
+  text-decoration: underline
+
+// Slick slider
+.slick
+  &-slider
+    position: relative
+    a
+      outline: none
+  &-list
+    overflow: hidden
+  &-track
+    display: flex
+    align-items: center
+  &-slide
+    outline: none
+    margin: 0 10px
+  &-arrow
+    background: transparent
+    cursor: pointer
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    padding: 5px
+    z-index: 1000
+    &.slick-disabled
+      opacity: .5
+      cursor: auto
+  &-prev
+    left: 0
+  &-next
+    right: 0
+  &-blackout
+    background: rgba(0, 0, 0, 0.5)
+    &.slick-prev
+      left: 20px
+    &.slick-next
+      right: 20px
+  &-dots
+    margin-top: 30px
+    flex-wrap: wrap
+    @include flexbox(flex, center, center)
+    li
+      margin: 10px
+    button
+      cursor: pointer
+      display: block 
+      font-size: 0
+      transition: .3s
+      background: #c2c2c2
+      @include size(10px, 10px)
+    .slick-active
+      button
+        background: $blue
+
+// Fix svg images for IE
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+  img[src*=".svg"]
+  width: 100%
+  

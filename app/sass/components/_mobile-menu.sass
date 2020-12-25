@@ -1,0 +1,26 @@
+.mobile-menu
+  display: none
+  position: fixed
+  z-index: 5000
+  bottom: 0
+  left: 0
+  width: 100%
+  background: $gray
+  text-align: center
+  &__item
+    font-size: 10px
+    font-weight: 700
+    text-transform: uppercase
+    line-height: 1.8
+    flex: 0 1 25%
+    border-top: 2px solid #d8d8d8
+    padding: 9px 0
+    &:not(:last-child)
+      border-right: 2px solid #d8d8d8
+  &__img
+    min-height: 20px
+    display: flex
+    align-items: center
+    margin-bottom: 2px
+  &__icon
+    margin: 0 auto

@@ -1,0 +1,573 @@
+.advantages
+ font-family: "Roboto", sans-serif
+
+.advantages-offer
+  padding: 40px 0
+  &__text
+    margin-top: 185px
+    max-width: 740px
+  &__title
+    font-size: 48px
+    text-transform: uppercase
+    line-height: 1
+    margin-bottom: 20px
+    span
+      color: #1f2e00
+      background: #fff447
+      display: inline-block
+      margin-bottom: 5px
+  &__title + &__desc
+    margin-top: 50px
+  &__desc
+    font-size: 24px
+    font-weight: 300
+    line-height: 36px
+    b
+      font-weight: bold
+  &__desc + &__desc
+    margin-top: 50px
+  &__form
+    width: 374px
+    height: auto
+    margin-left: auto
+    background: #ffffff
+    box-sizing: border-box
+    border: 4px solid #1680db
+.advantages-offer .container
+  display: flex
+  justify-content: flex-start
+  align-items: center
+.offer-form
+  color: #333
+  padding: 30px 34px
+  &__title
+    font-size: 20px
+    text-transform: uppercase
+    line-height: 1
+    margin-bottom: 20px
+  &__subtitle
+    font-size: 15px
+    line-height: 1
+    margin-bottom: 40px
+  input
+    width: 100%
+    height: 46px
+    box-sizing: border-box
+    border: 1px solid #d5d5d5
+    padding: 0 18px
+    line-height: 46px
+    background: #f8f8f8
+    border-radius: 4px
+    font-size: 15px
+    &.valid
+      border-color: green
+    &.error
+      border-color: red
+    &:focus
+      border-color: #1680db
+      background: #fff
+  &__comment
+    color: #333333
+    font-size: 13px
+    line-height: 21px
+    margin-top: 20px
+    a
+      color: #1680db
+.btn-adv
+  width: 300px
+  max-width: 100%
+  border-radius: 4px
+  background: #1680db
+  color: #fff
+  text-transform: uppercase
+  font-size: 16px
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 46px
+  cursor: pointer
+  text-align: center
+  transition: all 0.3s
+  &_green
+    background: #4f9242
+  &:hover
+    background: #333
+.express-order
+  padding: 80px 0
+  background: #f2f2f2
+
+.express
+  box-sizing: border-box
+  border: 4px solid #1680db
+  background: #ffffff
+  text-align: center
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.05)
+  padding-bottom: 58px
+  &.feedback-form
+    width: 100%
+  &__title
+    margin: 55px 0
+    color: #333333
+    font-weight: 300
+    font-size: 36px
+  &__inputs
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    align-items: flex-start
+    padding: 0 40px
+    input
+      height: 46px
+      box-sizing: border-box
+      border: 1px solid #d5d5d5
+      padding: 0 18px
+      line-height: 46px
+      background: #f8f8f8
+      border-radius: 4px
+      font-size: 15px
+      width: 100%
+      &.error
+        border-color: red
+      &.valid
+        border-color: green
+      &:focus
+        border-color: #1680db
+        background: #fff
+    .feedback-form__input-wrap
+      width: calc(33.33% - 20px)
+      margin-bottom: 30px
+      &_textarea
+        width: 100%
+        margin-bottom: 60px
+    textarea
+      width: 100%
+      border: 1px solid #d5d5d5
+      padding: 18px
+      box-sizing: border-box
+      border-radius: 4px
+      height: 116px
+      background: #f8f8f8
+      resize: none
+      &.error
+        border-color: red
+      &.valid
+        border-color: green
+      &:focus
+        border-color: #1680db
+        background: #fff
+  &__submit
+    margin: 0 auto 30px
+  &__comment
+    font-size: 15px
+    color: #333333
+    a
+      color: #1680db
+.product
+  border-top: 4px solid #fff447
+  border-bottom: 4px solid #fff447
+  background: url("../img/icons/exclusive.png") no-repeat top right #ffffff
+  box-sizing: border-box
+  padding-top: 56px
+  padding-bottom: 75px
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.05)
+  &__row
+  display: flex
+  justify-content: flex-start
+  &__img
+    margin-right: 18px
+    margin-top: 120px
+    min-width: 406px
+    box-sizing: border-box
+  &__desc
+    padding-top: 56px
+    padding-right: 40px
+    width: auto
+    box-sizing: border-box
+  &__title
+    font-size: 36px
+    color: #333333
+    font-weight: 300
+    padding-left: 16px
+    line-height: 1
+    margin-bottom: 58px
+  &__subtitle
+    font-size: 24px
+    font-weight: bold
+    margin-bottom: 24px
+  &__text
+    font-weight: 300
+    font-size: 20px
+    margin-bottom: 48px
+    line-height: 30px
+  ul
+    padding: 0
+    margin-bottom: 50px
+    li
+      font-size: 15px
+      margin-bottom: 15px
+      padding-left: 38px
+      background: url(../img/icons/check.png) no-repeat left center
+  &__callme
+    margin-top: 20px
+    font-size: 20px
+    font-weight: 300
+    span
+      font-weight: bold
+.articles
+  padding: 80px 0 100px
+  background: #f2f2f2
+  &__row
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    flex-wrap: wrap
+    .article
+      width: calc(50% - 20px)
+      margin-bottom: 30px
+      background: #ffffff
+      box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.05)
+      &__img
+        height: 200px
+        background-size: cover
+        background-repeat: no-repeat
+      &__title
+        padding: 0 30px
+        margin: 35px 0 25px
+        font-size: 24px
+      &__desc
+        font-size: 15px
+        margin-bottom: 35px
+        line-height: 24px
+        padding: 0 30px
+      &__link
+        height: 46px
+        color: #ffffff
+        text-transform: uppercase
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        background: #1680db
+        transition: all 0.3s
+        &:hover
+          background: #333
+.masked-group
+  position: relative
+  &__country
+    position: absolute
+    left: 0
+    height: 46px
+    line-height: 46px
+    &:before
+      content: ''
+      width: 21px
+      height: 15px
+      background: url('../img/icons/country-1.png') no-repeat
+      display: inline-block
+      margin-right: 14px
+      margin-left: 15px
+    &:after
+      content: ''
+      display: inline-block
+      width: 14px
+      height: 7px
+      margin-left: 14px
+      background: url('../img/icons/arrow.png') no-repeat
+  &__phone
+    padding-left: 110px !important
+.product-about
+  padding: 80px 0
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    flex-wrap: wrap
+  &__img
+    width: calc(50% - 20px)
+    .photo-full
+      width: 100%
+      height: 390px
+      margin-bottom: 16px
+      img
+        width: 100%
+        height: 100%
+    .photo-thumb-row
+      padding: 0
+      margin: 0 -4px 0 -4px
+      display: flex
+      justify-content: flex-start
+      align-items: flex-end
+      li
+        width: 138px
+        height: 95px
+        margin-right: 12px
+        box-sizing: border-box
+        border: 4px solid transparent
+        cursor: pointer
+        transition: all 0.3s
+        &.active
+          border-color: #1680db
+          img
+            opacity: 0.5
+        &:last-child
+          margin-right: 0
+  &__desc
+    width: calc(50% - 20px)
+  &__title
+    font-size: 36px
+    font-weight: 300
+    margin-bottom: 40px
+    line-height: 1
+  &__text
+    font-size: 15px
+    line-height: 24px
+    padding-bottom: 40px
+    border-bottom: 1px solid #cccccc
+  &__properties
+    padding-top: 35px
+    font-size: 15px
+    p
+      font-weight: bold
+      margin-bottom: 15px
+    ul
+      padding: 0
+      margin: 0
+      li
+        margin-bottom: 10px
+        padding-left: 35px
+        position: relative
+        line-height: 24px
+        span
+          color: #1680db
+          display: inline-block
+          width: 35px
+          position: absolute
+          left: 0
+  &__footer
+    width: 100%
+    margin-top: 35px
+    border-top: 1px solid #cccccc
+    padding-top: 50px
+    padding-bottom: 80px
+    &>ul
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 50px
+      li
+        font-size: 15px
+        font-weight: bold
+        padding-left: 60px
+        background: url(../img/icons/check-big.png) no-repeat left center
+        height: 30px
+        line-height: 30px
+  &__madein
+    font-size: 16px
+    text-transform: uppercase
+    ul
+      padding: 0 48px
+      display: flex
+      justify-content: space-between
+      li
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        img
+          margin-right: 18px
+.product-adv
+  padding-top: 80px
+  background: #f6f6f6
+  &__title
+    text-align: center
+    font-size: 36px
+    font-weight: 300
+    margin-bottom: 65px
+  ul
+    display: flex
+    justify-content: space-between
+    margin-bottom: 65px
+    li
+      width: 140px
+      height: 140px
+      background: #ededed
+      font-size: 12px
+      padding: 12px
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      align-items: center
+      span
+        text-align: center
+        margin-top: 12px
+        line-height: 16px
+.view-adv
+  background: url("../img/productions/bg-view-adv.png") no-repeat
+  background-position-y: 185px
+  background-position-x: center
+  height: 895px
+  position: relative
+  &__item
+    font-size: 15px
+    &-title
+      font-size: 20px
+      margin-bottom: 10px
+      line-height: 1
+    &-desc
+      font-size: 15px
+      line-height: 24px
+    &_1
+      width: 250px
+      height: 162px
+      text-align: center
+      margin: 0 auto
+      img
+        margin: 35px auto 0
+    &_2
+      width: 360px
+      height: 120px
+      position: absolute
+      left: 757px
+      top: 115px
+      display: flex
+      align-items: flex-end
+      justify-content: flex-start
+      img
+        margin-right: 40px
+        margin-bottom: 6px
+      div
+        width: 250px
+    &_3
+      width: 343px
+      height: 126px
+      position: absolute
+      right: 34px
+      top: 346px
+      display: flex
+      align-items: flex-start
+      justify-content: flex-start
+      img
+        margin-right: 40px
+      div
+        width: 238px
+    &_4
+      height: 120px
+      position: absolute
+      left: 757px
+      top: 535px
+      display: flex
+      align-items: flex-start
+      justify-content: flex-start
+      img
+        margin-right: 40px
+        margin-bottom: 6px
+      div
+        width: 274px
+    &_5
+      width: 354px
+      text-align: center
+      left: calc(50% - 177px)
+      position: absolute
+      top: 608px
+      img
+        margin: 0px auto 35px
+    &_6
+      position: absolute
+      left: 84px
+      top: 535px
+      display: flex
+      align-items: flex-start
+      justify-content: flex-start
+      img
+        margin-left: 40px
+      div
+        width: 250px
+        text-align: right
+    &_7
+      position: absolute
+      left: 0px
+      top: 346px
+      display: flex
+      align-items: flex-start
+      justify-content: flex-start
+      img
+        margin-left: 40px
+      div
+        width: 271px
+        text-align: right
+    &_8
+      position: absolute
+      height: 120px
+      left: 84px
+      top: 115px
+      display: flex
+      align-items: flex-end
+      justify-content: flex-start
+      img
+        margin-left: 40px
+        margin-bottom: 6px
+      div
+        width: 250px
+        text-align: right
+.characteristics
+  &__title
+    font-size: 36px
+    font-weight: 300
+    margin: 72px 0
+    text-align: center
+  table
+    border: 4px solid #1680db
+    border-top: 0
+    width: 100%
+    border-collapse: collapse
+    margin-bottom: 80px
+    thead
+      td
+        background: #1680db
+        color: #fff
+        text-transform: uppercase
+        font-size: 16px
+        border-color: #4599e2
+        height: 46px
+        padding-top: 0
+        padding-bottom: 0
+        line-height: 46px
+    td
+      padding: 27px
+      font-size: 15px
+      line-height: 24px
+      border-right: 1px solid #cccccc
+      width: 390px
+      &:first-child
+        width: 396px
+      &:last-child
+        width: 396px
+      b
+        font-weight: bold
+    .tr_bg-gray
+      td
+        background: #f6f6f6
+  &__consultation
+    font-size: 24px
+    line-height: 36px
+    font-weight: 300
+    text-align: center
+    b
+      font-weight: bold
+    a.mailto
+      color: #1680db
+.certificates
+  padding-bottom: 100px
+  &__title
+    margin: 75px 0 60px
+    text-align: center
+    font-weight: 300
+    font-size: 36px
+.customers__task-slider-certificates
+  padding-left: 60px
+  padding-right: 60px
+  .slick-blackout
+    background: transparent
+  .slick-arrow
+    top: calc(50% - 30px)
+  .slick-dots button
+    border-radius: 10px
